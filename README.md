@@ -160,7 +160,7 @@ Ref: orders.order_number < payments.order_number
 
 ### Implementación en BigQuery
 
-Se ha creado el dataset en BigQuery siguiendo los pasos mostrados en el archivo parte_2_modelo_bigquery\notebooks\01_setup_bigquery.ipynb.
+Se ha creado el dataset en BigQuery siguiendo los pasos mostrados en el archivo [01_setup_bigquery.ipynb](parte_2_modelo_bigquery/notebooks/01_setup_bigquery.ipynb).
 
 Conviene aclarar que las relaciones entre las tablas se definen conceptualmente en el modelo relacional, pero en BigQuery se omiten las constraints para optimizar el rendimiento y evitar restricciones informativas innecesarias.
 
@@ -168,7 +168,7 @@ Ejecutando cada una de las celdas del notebook en orden se puede reproducir la c
 
 ### Generación de datos sintéticos y carga en BigQuery
 
-Esta parte está resuelta en el notebook parte_2_modelo_bigquery\notebooks\02_generate_data.ipynb.
+Esta parte está resuelta en el notebook [02_generate_data.ipynb](parte_2_modelo_bigquery/notebooks/02_generate_data.ipynb).
 
 Para poblar el dataset se generan una serie de datos sintéticos realistas. Se utiliza la librería `Faker` con apoyo de la librería `random` para la generación del set con al menos:
   - 500 clientes
@@ -176,7 +176,7 @@ Para poblar el dataset se generan una serie de datos sintéticos realistas. Se u
   - 2000 pedidos
   - ~4500 líneas de pedido (media 2-3 productos por pedido)
   - Pagos correspondientes a cada pedido
-  - Valoraciones para ~35% de los productos entregados \
+  - Valoraciones para ~35% de los productos entregados 
 
 Se procura que los datos tengan sentido de negocio con precios coherentes, fechas ordenadas, etc.
 
@@ -186,7 +186,7 @@ La ejecución de cada una de las celdas del notebook  en orden permite generar u
 
 ### Queries de verificación
 
-En el notebook parte_2_modelo_bigquery\notebooks\03_queries_verification.ipynb se implementan 5 queries para comprobar el funcionamiento del modelo: 
+En el notebook [03_queries_verification.ipynb](parte_2_modelo_bigquery/notebooks/03_queries_verification.ipynb) se implementan 5 queries para comprobar el funcionamiento del modelo: 
 - Ingresos por mes
 - Productos más vendidos
 - Clientes por canal por el que conocieron la tienda
